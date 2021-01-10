@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>图片预览完善</title>
+        <link rel="stylesheet" type="text/css" href="preview.css" />
+        <style>
+            .content {
+                width: 640px;
+                padding: 20px;
+                margin: 20px auto;
+                border: 1px solid #DDDDDD;
+            }
+            
+            .content img {
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="content">
+            <h3>文字出发查看</h3>
+            <a href="javascript:;" class="zoomImgshow">
+                1张
+                <div class="zoomImg-hide-box">
+                    <img src="1-1600.jpg" class="zoomImg" data-caption="这是图片名称4" alt="" />
+                </div>
+            </a>
+            <a href="javascript:;" class="zoomImgshow">
+                少于6张
+                <div class="zoomImg-hide-box">
+                    <img src="m1.jpg" class="zoomImg" alt="" />
+                    <img src="m2.jpg" class="zoomImg" alt="" />
+                    <img src="m3.jpg" class="zoomImg" alt="" />
+                </div>
+            </a>
+            <a href="javascript:;" class="zoomImgshow">
+                大于6张
+                <div class="zoomImg-hide-box">
+                    <img src="m1.jpg" class="zoomImg" alt="" />
+                    <img src="m2.jpg" class="zoomImg" alt="" />
+                    <img src="m3.jpg" class="zoomImg" alt="" />
+                    <img src="m1.jpg" class="zoomImg" data-caption="这是图片名称1" alt="" />
+                    <img src="m2.jpg" class="zoomImg" data-caption="这是图片名称2" alt="" />
+                    <img src="m3.jpg" class="zoomImg" data-caption="这是图片名称3" alt="" />
+                    <img src="1-1600.jpg" class="zoomImg" data-caption="这是图片名称4" alt="" />
+                    <img src="gg1.jpg" class="zoomImg" data-caption="这是图片gg1" alt="" />
+                    <img src="gg2.jpg" class="zoomImg" data-caption="这是图片gg2" alt="" />
+                    <img src="m1.jpg" class="zoomImg" data-caption="这是图片名称1" alt="" />
+                    <img src="m2.jpg" class="zoomImg" data-caption="这是图片名称2" alt="" />
+                    <img src="m3.jpg" class="zoomImg" data-caption="这是图片名称3" alt="" />
+                    <img src="1-1600.jpg" class="zoomImg" data-caption="这是图片名称4" alt="" />
+                    <img src="gg1.jpg" class="zoomImg" data-caption="这是图片gg1" alt="" />
+                </div>
+            </a>
+            <h3>图片直接查看</h3>
+            <h4>单张</h4>
+            <div class="zoomImgBox">
+                <img src="1-1600.jpg" class="zoomImg" data-caption="这是图片名称4" alt="" />
+            </div>
+            <h4>少于6张</h4>
+            <div class="zoomImgBox">
+                <img src="m1.jpg" class="zoomImg" data-caption="这是图片名称1" alt="" />
+                <img src="m2.jpg" class="zoomImg" data-caption="这是图片名称2" alt="" />
+                <img src="m3.jpg" class="zoomImg" data-caption="这是图片名称3" alt="" />
+                <img src="1-1600.jpg" class="zoomImg" data-caption="这是图片名称4" alt="" />
+            </div>
+            <h4>大于6张</h4>
+            <div class="zoomImgBox">
+                <img src="m1.jpg" class="zoomImg" alt="" />
+                <img src="m2.jpg" class="zoomImg" alt="" />
+                <img src="m3.jpg" class="zoomImg" alt="" />
+                <img src="m1.jpg" class="zoomImg" data-caption="这是图片名称1" alt="" />
+                <img src="m2.jpg" class="zoomImg" data-caption="这是图片名称2" alt="" />
+                <img src="m3.jpg" class="zoomImg" data-caption="这是图片名称3" alt="" />
+                <img src="1-1600.jpg" class="zoomImg" data-caption="这是图片名称4" alt="" />
+                <img src="gg1.jpg" class="zoomImg" data-caption="这是图片gg1" alt="" />
+                <img src="gg2.jpg" class="zoomImg" data-caption="这是图片gg2" alt="" />
+                <img src="m1.jpg" class="zoomImg" data-caption="这是图片名称1" alt="" />
+                <img src="m2.jpg" class="zoomImg" data-caption="这是图片名称2" alt="" />
+                <img src="m3.jpg" class="zoomImg" data-caption="这是图片名称3" alt="" />
+                <img src="1-1600.jpg" class="zoomImg" data-caption="这是图片名称4" alt="" />
+                <img src="gg1.jpg" class="zoomImg" data-caption="这是图片gg1" alt="" />
+            </div>
+        </div>
+        <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+        <script src="preview.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            showZoomImg('.zoomImg', 'img');
+            showZoomImg('.zoomImgshow', 'text');
+        </script>
+    </body>
+
+</html>
